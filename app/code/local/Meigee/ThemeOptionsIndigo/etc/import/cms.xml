@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<root>
+    <cms>
+        <pages>
+            <item>
+                <title>Home Page</title>
+                <identifier>home</identifier>
+                <content><![CDATA[<div class="text-block">
+	<span>
+		<h3>Indigo - premium magento theme, responsive, retina ready and with lots of feature.</h3>
+		<p>It's the best way to organize your store with high quality of design. Theme easy to use and customize. Powerful admin panel with lots of feature.</p>
+	</span>
+	<div class="buttons-set">
+		<button class="button btn-buy" title="Buy theme" type="button">
+			<span><span>Buy theme</span></span>
+		</button>
+		<button class="button btn-view" title="View features" type="button">
+			<span><span>View features</span></span>
+		</button>
+	</div>
+	<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="home-banners">
+	<div class="grid_4 alpha">
+		<a href="#" title="Banner 1">
+			<img src="{{media url="wysiwyg/banner_1.jpg"}}" data-srcx2="{{media url="wysiwyg/banner_1@x2.jpg"}}">
+		</a>
+	</div>
+	<div class="grid_4">
+		<a href="#" title="Banner 2">
+			<img src="{{media url="wysiwyg/banner_2.jpg"}}" data-srcx2="{{media url="wysiwyg/banner_2@x2.jpg"}}">
+		</a>
+	</div>
+	<div class="grid_4 omega">
+		<a href="#" title="Banner 3">
+			<img src="{{media url="wysiwyg/banner_3.jpg"}}" data-srcx2="{{media url="wysiwyg/banner_3@x2.jpg"}}">
+		</a>
+	</div>
+	<div class="clear"></div>
+</div>
+<header class="page-title">
+	<h1>Backpacks</h1>
+</header>
+{{widget type="meigeewidgetsindigo/featuredcategory" featured_category="category/13" template="meigee/meigeewidgetsindigo/grid.phtml" products_amount="8"}}
+<div class="color-block">
+	<div class="color-box-bg"><img src="{{media url="wysiwyg/bottom_bg.jpg"}}" data-srcX2="{{media url="wysiwyg/bottom_bg@x2.jpg"}}" alt="" /></div>
+	<header class="page-title"><h2>Our features</h2></header>
+	<div class="grid_3 alpha">
+		<div class="indent">
+			<span><i class="fa fa-star"></i></span>
+			<h3>Perfect quality</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis quam imperdiet, rhoncus mauris non, vulputate velit.</p>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="grid_3">
+		<div class="indent">
+			<span><i class="fa fa-gift"></i></span>
+			<h3>Exclusive offers</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis quam imperdiet, rhoncus mauris non, vulputate velit.</p>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="grid_3">
+		<div class="indent">
+			<span><i class="fa fa-truck"></i></span>
+			<h3>Worldwide delivery</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis quam imperdiet, rhoncus mauris non, vulputate velit.</p>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="grid_3 omega">
+		<div class="indent">
+			<span><i class="fa fa-money"></i></span>
+			<h3>Money back</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis quam imperdiet, rhoncus mauris non, vulputate velit.</p>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<div class="bottom-products">
+	<header class="page-title">
+		<h1>Totes</h1>
+	</header>
+	{{widget type="meigeewidgetsindigo/featuredcategory" featured_category="category/12" template="meigee/meigeewidgetsindigo/slider.phtml" products_amount="10" visible_products="4" widget_id="4174"}}
+</div>
+<div class="clear"></div>]]></content>
+                <is_active>1</is_active>
+                <sort_order>0</sort_order>
+                <stores>
+                    <item>0</item>
+                </stores>
+                <root_template>one_column</root_template>
+            </item>
+        </pages>
+        <blocks>
+            <item>
+                <title>Indigo Boxed Slide 1</title>
+                <identifier>indigo_boxed_slide_1</identifier>
+                <content><![CDATA[<a href="#"><img src="{{media url="wysiwyg/boxed_slider_img.jpg"}}" data-srcX2="{{media url="wysiwyg/boxed_slider_img@x2.jpg"}}" alt="" /></a>
+<div class="slide-container right-caption">
+	<h2>Indigo</h2>
+	<p>Browse with interest. Shop with pleasure. Strong working Indigo platform start a new age of magento based shops.</p>
+	<h4>
+		<button class="button btn-buy" title="Go shopping" type="button">
+			<span><span>Go shopping</span></span>
+		</button>
+	</h4>
+</div>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			<item>
+                <title>Indigo Boxed Slide 2</title>
+                <identifier>indigo_boxed_slide_2</identifier>
+                <content><![CDATA[<a href="#"><img src="{{media url="wysiwyg/boxed_slider_img_2.jpg"}}" data-srcX2="{{media url="wysiwyg/boxed_slider_img_2@x2.jpg"}}" alt="" /></a>
+<div class="slide-container slide-skin-2">
+	<h2>Modern colorful vase</h2>
+	<h3>Special price only in our shop</h3>
+	<p>Browse with interest. Shop with pleasure. Strong working Indigo platform start a new age of magento based shops</p>
+</div>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			<item>
+                <title>Indigo Boxed Slide 3</title>
+                <identifier>indigo_boxed_slide_3</identifier>
+                <content><![CDATA[<a href="#"><img src="{{media url="wysiwyg/boxed_slider_img_3.jpg"}}" data-srcX2="{{media url="wysiwyg/boxed_slider_img_3@x2.jpg"}}" alt="" /></a>
+<div class="slide-container slide-skin-3">
+	<h5>Perfect Holidays gift for woman</h5>
+	<h3>Les Exclusifs de CHANEL</h3>
+</div>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			<item>
+                <title>Indigo Cart Banner</title>
+                <identifier>indigo_cart_banner</identifier>
+                <content><![CDATA[<a href="#"><img src="{{media url="wysiwyg/cart_banner.jpg"}}" data-srcX2="{{media url="wysiwyg/cart_banner@x2.jpg"}}" alt="" /></a>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			<item>
+                <title>Indigo Footer</title>
+                <identifier>indigo_footer</identifier>
+                <content><![CDATA[<div class="footer-columns-block">
+	<div class="custom_footer">
+		<div class="grid_4 alpha">
+			<div class="footer-bg">
+				<img src="{{media url="wysiwyg/footer_bg.jpg"}}" data-srcX2="{{media url="wysiwyg/footer_bg@x2.jpg"}}" alt="" />
+			</div>
+			<div class="indent logo-indent">
+				<h2 class="footer-logo"><a href="#" title="Magento Commerce" class="logo"><img src="{{media url="wysiwyg/footer_logo.png"}}" data-srcX2="{{media url="wysiwyg/footer_logo@x2.png"}}" alt="Magento Commerce" /></a></h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas lectus et malesuada elementum. Sed a justo et dui mattis pretium vitae vitae justo. Curabitur sit amet arcu at velit ullamcorper pharetra at sed augue. Nunc eget ipsum nisi. Morbi sed imperdiet arcu.
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="grid_4 second">
+			<div class="indent">
+				<div class="footer-links-container">
+					<header>
+						<h3>Accessories</h3>
+					</header>
+					<div class="custom-footer-content">
+						<ul>
+							<li><a href="#">Backpacks</a></li>
+							<li><a href="#">Totes</a></li>
+							<li><a href="#">Handbags</a></li>
+							<li><a href="#">Bicycles</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="footer-links-container">
+					<header>
+						<h3>Help</h3>
+					</header>
+					<div class="custom-footer-content">
+						<ul>
+							<li><a href="#">Backpacks</a></li>
+							<li><a href="#">Totes</a></li>
+							<li><a href="#">Handbags</a></li>
+							<li><a href="#">Bicycles</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="grid_3 third omega">
+			<div class="indent">
+				<div class="footer-links-container">
+					<header>
+						<h3>Cloths</h3>
+					</header>
+					<div class="custom-footer-content">
+						<ul>
+							<li><a href="#">Backpacks</a></li>
+							<li><a href="#">Totes</a></li>
+							<li><a href="#">Handbags</a></li>
+							<li><a href="#">Bicycles</a></li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="footer-links-container">
+					<header>
+						<h3>Social</h3>
+					</header>
+					{{block type="newsletter/subscribe" block_id="static_sidebar" template="newsletter/subscribe.phtml"}}
+				</div>
+				<div class="clear"></div>
+				{{widget type="meigeewidgetsindigo/sociallinks" twitter="http://twitter.com" rss="http://rss.com" facebook="http://facebook.com" googleplus="https://plus.google.com" linkedin="http://linkedin.com" vimeo="https://vimeo.com/" youtube="http://youtube.com/" flickr="http://flickr.com/" template="meigee/meigeewidgetsindigo/sociallinks.phtml"}}
+			</div>
+		</div>
+		<div class="clear"></div>
+		<address>{{config path="design/footer/copyright"}}</address>
+	</div>
+</div>
+<div class="clear"></div>
+{{block type="page/switch" block_id="store_switcher" template="page/switch/stores.phtml"}}]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			<item>
+                <title>Indigo Product Banner</title>
+                <identifier>indigo_product_banner</identifier>
+                <content><![CDATA[<a href="#"><img src="{{media url="wysiwyg/product_banner.jpg"}}" data-srcX2="{{media url="wysiwyg/product_banner@x2.jpg"}}" alt="" /></a>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			<item>
+                <title>Indigo Product Custom</title>
+                <identifier>indigo_product_custom</identifier>
+                <content><![CDATA[<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="meigeeteam">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			<item>
+                <title>Indigo Slide 1</title>
+                <identifier>indigo_slide_1</identifier>
+                <content><![CDATA[<a href="#"><img src="{{media url="wysiwyg/slider_img.jpg"}}" data-srcX2="{{media url="wysiwyg/slider_img@x2.jpg"}}" alt="" /></a>
+<div class="slide-container right-caption">
+	<h2>Indigo</h2>
+	<p>Browse with interest. Shop with pleasure. Strong working Indigo platform start a new age of magento based shops.</p>
+	<h4>
+		<button class="button btn-buy" title="Go shopping" type="button">
+			<span><span>Go shopping</span></span>
+		</button>
+	</h4>
+</div>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			<item>
+                <title>Indigo Slide 2</title>
+                <identifier>indigo_slide_2</identifier>
+                <content><![CDATA[<a href="#"><img src="{{media url="wysiwyg/slider_img_2.jpg"}}" data-srcX2="{{media url="wysiwyg/slider_img_2@x2.jpg"}}" alt="" /></a>
+<div class="slide-container slide-skin-2">
+	<h2>Modern colorful vase</h2>
+	<h3>Special price only in our shop</h3>
+	<p>Browse with interest. Shop with pleasure. Strong working Indigo platform start a new age of magento based shops</p>
+</div>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+			<item>
+                <title>Indigo Slide 3</title>
+                <identifier>indigo_slide_3</identifier>
+                <content><![CDATA[<a href="#"><img src="{{media url="wysiwyg/slider_img_3.jpg"}}" data-srcX2="{{media url="wysiwyg/slider_img_3@x2.jpg"}}" alt="" /></a>
+<div class="slide-container slide-skin-3">
+	<h5>Perfect Holidays gift for woman</h5>
+	<h3>Les Exclusifs de CHANEL</h3>
+</div>]]></content>
+                <is_active>1</is_active>
+                <stores>
+                    <item>0</item>
+                </stores>
+            </item>
+        </blocks>
+    </cms>
+</root>

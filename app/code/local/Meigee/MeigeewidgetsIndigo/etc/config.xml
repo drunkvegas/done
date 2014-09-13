@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Meigee_MeigeewidgetsIndigo>
+			<version>0.0.1</version>
+		</Meigee_MeigeewidgetsIndigo>
+	</modules>
+	<global>
+		<helpers>
+			<meigeewidgetsindigo>
+				<class>Meigee_MeigeewidgetsIndigo_Helper</class>
+			</meigeewidgetsindigo>
+		</helpers>
+		<blocks>
+			 <meigeewidgetsindigo>
+				<class>Meigee_MeigeewidgetsIndigo_Block</class>
+			 </meigeewidgetsindigo>
+		</blocks>
+		<models>
+			<!-- ... -->
+			<meigeewidgetsindigo>
+				<class>Meigee_MeigeewidgetsIndigo_Model</class>
+			</meigeewidgetsindigo>   
+			<!-- ... -->
+		</models>
+	</global>
+	<!---->
+	<frontend>
+		<layout>
+			<updates>
+				<meigeewidgetsindigo>
+					<file>meigee/widgetoptions.xml</file>
+				</meigeewidgetsindigo>
+			</updates>
+		</layout>
+	</frontend>
+</config>

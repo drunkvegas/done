@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Pademobile
+ * @package     Pademobile_Pademobile
+ * @copyright   Copyright (c) Pademobile International, LLC (https://www.pademobile.com/)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Pademobile_Pademobile>
+            <version>1.0.3</version>
+        </Pademobile_Pademobile>
+    </modules>
+
+    <global>
+        <blocks>
+            <pademobile>
+                <class>Pademobile_Pademobile_Block</class>
+            </pademobile>
+        </blocks>
+
+        <models>
+            <pademobile>
+                <class>Pademobile_Pademobile_Model</class>
+            </pademobile>
+        </models>
+
+        <helpers>
+            <pademobile>
+                <class>Pademobile_Pademobile_Helper</class>
+            </pademobile>
+        </helpers>
+    </global>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <Pademobile_Pademobile>
+                    <files>
+                        <default>Pademobile_Pademobile.csv</default>
+                    </files>
+                </Pademobile_Pademobile>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <translate>
+            <modules>
+                <Pademobile_Pademobile>
+                    <files>
+                        <default>Pademobile_Pademobile.csv</default>
+                    </files>
+                </Pademobile_Pademobile>
+            </modules>
+        </translate>
+
+        <routers>
+            <pademobile>
+                <use>standard</use>
+                <args>
+                    <module>Pademobile_Pademobile</module>
+                    <frontName>pademobile</frontName>
+                </args>
+            </pademobile>
+        </routers>
+
+        <layout>
+            <updates>
+                <pademobile>
+                    <file>pademobile.xml</file>
+                </pademobile>
+            </updates>
+        </layout>
+    </frontend>
+
+    <phpunit>
+        <suite>
+            <modules>
+                <Pademobile_Pademobile />
+            </modules>
+        </suite>
+    </phpunit>
+
+    <default>
+        <payment>
+            <pademobile>
+                <model>pademobile/pademobile</model>
+                <active>0</active>
+                <payment_action>capture</payment_action>
+                <title>Pademobile.com</title>
+                <country>mx</country>
+                <order_status>processing</order_status>
+                <cgi_url>test</cgi_url>
+                <allowspecific>0</allowspecific>
+                <debug>0</debug>
+            </pademobile>
+        </payment>
+    </default>
+</config>

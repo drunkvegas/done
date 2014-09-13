@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ldml>
+	<identity>
+		<version number="$Revision: 1.67 $"/>
+		<generation date="$Date: 2009/06/15 03:46:25 $"/>
+		<language type="ka"/>
+	</identity>
+	<localeDisplayNames>
+		<localeDisplayPattern>
+			<localePattern>{0} ({1})</localePattern>
+			<localeSeparator>, </localeSeparator>
+		</localeDisplayPattern>
+		<languages>
+			<language type="ab">აფხაზური</language>
+			<language type="ady">ადიღეური</language>
+			<language type="ae">ავესტა</language>
+			<language type="af">აფრიკული</language>
+			<language type="ain">აინუ</language>
+			<language type="ale">ალეუტური</language>
+			<language type="ang">ძველი ინგლისური</language>
+			<language type="ar">არაბული</language>
+			<language type="arc">არამეული</language>
+			<language type="art">ხელოვნური სხვა</language>
+			<language type="as">ასამური</language>
+			<language type="ast">ავსტრიული</language>
+			<language type="az">აზერბაიჯანული</language>
+			<language type="be">ბელორუსული</language>
+			<language type="bg">ბულგარული</language>
+			<language type="bh">ბიჰარი</language>
+			<language type="bo">ტიბეტ�

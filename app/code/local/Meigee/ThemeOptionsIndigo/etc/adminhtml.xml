@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<meigee_indigo_general>
+										<title>General Options</title>
+										<sort_order>1</sort_order>
+									</meigee_indigo_general>
+									<meigee_indigo_design>
+										<title>Theme Design</title>
+										<sort_order>2</sort_order>
+									</meigee_indigo_design>
+									<meigee_indigo_productpage>
+										<title>Product Page</title>
+										<sort_order>3</sort_order>
+									</meigee_indigo_productpage>
+									<meigee_indigo_sidebar>
+										<title>Sidebar Blocks</title>
+										<sort_order>4</sort_order>
+									</meigee_indigo_sidebar>
+									<meigee_indigo_headerslider>
+										<title>Header Slider</title>
+										<sort_order>5</sort_order>
+									</meigee_indigo_headerslider>
+									<meigee_indigo_bgslider>
+										<title>Background Slider</title>
+										<sort_order>6</sort_order>
+									</meigee_indigo_bgslider>
+								</children>
+							</config>
+						</children>
+					</system>
+				 </children>
+			</admin>
+		</resources>
+	</acl>
+</config>

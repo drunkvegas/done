@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ldml>
+	<identity>
+		<version number="$Revision: 1.19 $"/>
+		<generation date="$Date: 2009/06/15 17:12:26 $"/>
+		<language type="gsw"/>
+	</identity>
+	<fallback>de_CH</fallback>
+	<localeDisplayNames>
+		<localeDisplayPattern>
+			<localePattern>{0} ({1})</localePattern>
+			<localeSeparator>, </localeSeparator>
+		</localeDisplayPattern>
+		<languages>
+			<language type="aa">Afar</language>
+			<language type="ab">Abchasisch</language>
+			<language type="ace">Aceh</language>
+			<language type="ach">Acholi</language>
+			<language type="ada">Adangme</language>
+			<language type="ady">Adygai</language>
+			<language type="ae">Avestisch</language>
+			<language type="af">Afrikaans</language>
+			<language type="afa">Afro-Asiatischi Schpraach</language>
+			<language type="afh">Afrihili</language>
+			<language type="ain">Ainu</language>
+			<language type="ak">Akan</language>
+			<language type="akk">Akkadisch</language>
+			<language type="ale">Aleutisch</language>
+			<language type="alg">Algonkin-Schpraach</language>
+			<language type="alt">Süüd-Altaisch</language>
+			<language type="am">Amharisch</language>
+			<language type="an">Aragonesisch</language>
+			<language type="ang">Altänglisch</language>
+			<language type="anp">Angika</language>
+			<language type="apa">Apache-Schpraach</language>
+			<language type="ar">Arabisch</lang

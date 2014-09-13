@@ -1,0 +1,73 @@
+<?php
+$meigee_indigo_general = MAGE::helper('ThemeOptionsIndigo')->getThemeOptionsIndigo('meigee_indigo_general');
+$meigee_indigo_design = MAGE::helper('ThemeOptionsIndigo')->getThemeOptionsIndigo('meigee_indigo_design');
+$appearance = $meigee_indigo_design['appearance'];
+$toTop = $meigee_indigo_general['otheroptions']['totop'];
+
+/* Font Replacement */
+if ($appearance['font'] == 1): 
+	echo '<link href="http://fonts.googleapis.com/css?family=' . str_replace(' ', '+', $appearance['gfont']) . ':200,300,400,500,600,700,800" rel="stylesheet" type="text/css">';
+endif;
+
+echo '<style type="text/css">
+.nav-wide#nav-wide .right-content h2,
+.nav-wide#nav-wide .top-content,
+.nav-wide#nav-wide .bottom-content,
+.nav-wide#nav-wide ul.level0 a span.subtitle,
+.product-collateral h2,
+header#header .top-cart .block-title a,
+.text-block button span,
+.std h1,
+.price,
+.product-name a,
+.page-title h2,
+.page-title h1,
+#footer .custom_footer h3,
+aside.sidebar .block .block-title strong span,
+aside.sidebar .block .filter-label span,
+aside.sidebar .actions a,
+button.button span span,
+.dashboard .welcome-msg .hello,
+.dashboard .box-head h2,
+.dashboard .box-title h3,
+#login-holder form .actions .link-box a,
+.add-to-cart-success,
+.add-to-cart-success a,
+.account-login .indent h2,
+.opc .step-title,
+.opc .grid_4 h3,
+aside.sidebar .block.block-progress .block-title strong span,
+#onepagecheckout_forgotbox .page-title span,
+#onepagecheckout_loginbox .page-title span,
+#onepagecheckout_forgotbox button.button span span,
+#onepagecheckout_loginbox button.button span span,
+#onepagecheckout_orderform .col3-set.onepagecheckout_datafields .op_block_title,
+#checkout-coupon-discount-load .discount-form .buttons-set button.button span span,
+#checkout-review-submit #review-buttons-container button.btn-checkout,
+.cart .cart-collaterals h2,
+.cart .btn-proceed-checkout,
+.product-view .product-name h2,
+.block-related .block-title strong span,
+.catalog-product-view .box-reviews ul li h6,
+header#header .top-cart .block-content .actions a,
+header#header .top-cart .block-content .subtotal span,
+.catalog-product-view .box-reviews h2,
+aside.sidebar .block.block-wishlist li.item .product-details .product-name a,
+aside.sidebar .block.block-wishlist .link-cart,
+.header-slider-container .iosSlider .slider .item .slide-container h2,
+.header-slider-container .iosSlider .slider .item .slide-container.slide-skin-2 h3,
+.header-slider-container .iosSlider .slider .item h5,
+.header-slider-container .iosSlider .slider .item .slide-container.slide-skin-3 h3 {font-family:'.str_replace(' ', '+', $appearance['gfont']).'; -webkit-text-stroke-width: 0.02em;}</style>';
+
+/* toTop */
+if ($toTop): ?>
+	<script type="text/javascript">
+		jQuery(window).load(function() {
+			if(!((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/Android/i)))){
+				jQuery().UItoTop({
+					text: "<?php echo $this->__('Top'); ?>"
+				});
+			}
+		});
+	</script>
+<?php endif;

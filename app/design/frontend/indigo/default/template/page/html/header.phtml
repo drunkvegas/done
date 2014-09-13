@@ -1,0 +1,84 @@
+<?php
+/**
+ * Magento
+ *
+ * @category    design
+ * @package     meigeetheme_default
+ * @copyright   Copyright (c) 2012 MeigeeTeam. (http://www.meigeeteam.com)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<?php
+	$meigee_indigo_general = MAGE::helper('ThemeOptionsIndigo')->getThemeOptionsIndigo('meigee_indigo_general');
+    $customlogo = $meigee_indigo_general['customlogo'];
+    $mediaurl = MAGE::helper('ThemeOptionsIndigo')->getThemeOptionsIndigo('mediaurl');
+	$loginAjaxStatus = $meigee_indigo_general['loginajax']['status'];
+?>
+<header id="header">
+	<div class="container_12">
+		<div class="grid_12">
+			<?php if ($customlogo['logo_status'] == 0): ?>
+				<h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" <?php echo MAGE::helper('ThemeOptionsIndigo/Retina')->getRetinaData('logo'); ?> alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+				<?php else:?>
+				<h1 class="logo"><strong><?php echo $customlogo['logo_alt']; ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $customlogo['logo_alt']; ?>" class="logo"><img src="<?php echo $mediaurl.$customlogo['logo']; ?>" <?php echo MAGE::helper('ThemeOptionsIndigo/Retina')->getRetinaData('logo_custom'); ?> alt="<?php echo $customlogo['logo_alt']; ?>" /></a></h1>
+			<?php endif; ?>
+			<p class="welcome-msg"><span><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></span></p>
+			<?php echo $this->getChildHtml('cart_sidebar') ?>
+			<div class="header-right-box">
+				<div class="quick-access">
+					<?php echo $this->getChildHtml('store_language') ?>
+					<?php echo $this->getChildHtml('currency') ?>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+				<div class="links-container">
+					<span class="links-button"><span><i class="fa fa-bars"></i><?php echo $this->__('Top links') ?></span></span>
+					<?php echo $this->getChildHtml('topLinks') ?>
+					<dl class="company-links">
+						<dt>
+							<a href="#"><span><?php echo $this->__('Company') ?></span></a>
+						</dt>
+						<dd>
+							<?php echo $this->getChildHtml('cms_footer_links') ?>
+							<?php echo $this->getChildHtml('footer_links') ?>
+						</dd>
+					</dl>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="header-wrapper">
+		<div class="container_12">
+			<div class="grid_12">
+				<?php if ($customlogo['small_logo_status'] == 0): ?>
+					<h1 class="small-logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getSkinUrl('images/small_logo.png') ?>" <?php echo MAGE::helper('ThemeOptionsIndigo/Retina')->getRetinaData('small_logo'); ?> alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+					<?php else:?>
+					<h1 class="small-logo"><strong><?php echo $customlogo['small_logo_alt']; ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $customlogo['small_logo_alt']; ?>" class="logo"><img src="<?php echo $mediaurl.$customlogo['small_logo']; ?>" <?php echo MAGE::helper('ThemeOptionsIndigo/Retina')->getRetinaData('small_logo_custom'); ?> alt="<?php echo $customlogo['logo_alt']; ?>" /></a></h1>
+				<?php endif; ?>
+				<a href="<?php echo $this->getUrl(''); ?>" class="home-button" title="Home"><i class="fa fa-home"></i></a>
+				<div class="menu-button"><i class="fa fa-bars"></i><span><?php echo $this->__('Menu') ?></span></div>
+				<?php echo $this->getChildHtml('topSearch') ?>
+				<nav class="nav-container">
+					<?php echo $this->getChildHtml('topMenu') ?>
+				</nav>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</header>
+<?php echo $this->getChildHtml('topContainer'); ?>
+<?php echo $this->getChildHtml('header_slider_container') ?>
+<?php if($loginAjaxStatus): ?>
+	<script type="text/javascript">
+		/* Login ajax */
+		jQuery('.top-link-login').on('click', function(){
+			ajaxLogin("<?php echo $this->getUrl('meigeeactions/login/') ?>", false);
+			return false;
+		});
+	</script>
+<?php endif; ?>

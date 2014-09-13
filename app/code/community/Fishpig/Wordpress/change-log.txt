@@ -1,0 +1,51 @@
+##
+# Magento / WordPress Integration
+#
+# Author:  Ben Tideswell
+# URL:  http://fishpig.co.uk/magento/wordpress-integration/
+##
+
+13/02/2014 - 3.0.29.0
+- Added better legacy support
+
+10/02/2014 - 3.0.27.0
+- Added better support for non-latin characters
+
+10/02/2014 - 3.0.26.0
+- Improved OG tags
+
+04/02/2014 - 3.0.23.0
+- Version fix
+
+03/02/2014 - 3.0.22.0
+- Fixes for product shortcode
+
+27/01/2014 - 3.0.21.0
+- Add setOrder and serOrderDir to associated posts tab
+- Fixed LightboxGallery for posts that don't have galleries but have single images
+- Impoved OpenGraph integration
+
+20/01/2014 - 3.0.20.0
+- Improved Gravatar system
+- Improved SEO title. Title is now trimmed with %sep%
+- Added support for Cyrillic URL's
+
+13/01/2014 - 3.0.18.0
+- Improved auto-login details system by moving to System Configuration
+
+06/01/2014 - 3.0.16.0
+- Added support for the Facebook extension: http://fishpig.co.uk/magento/wordpress-integration/facebook/
+
+03/01/2014 - 3.0.15.0
+- Add better HTML filters for comments. Safe HTML tags are now allowed and you can enable/disable nl2br
+- Fixed Feed title so that if no 'blogname' is set, a default feed title is used
+
+31/12/2013 - 3.0.14.0
+- Added support for WordPress calendar widget
+
+17/12/2013 - 3.0.12.0
+- Added support for Simple Page Sidebars plugin
+- Fixed issue with router for Root
+
+16/12/2013 - 3.0.10.0
+- Added AJAX block 

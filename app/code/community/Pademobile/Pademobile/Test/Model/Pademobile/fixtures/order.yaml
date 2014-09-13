@@ -1,0 +1,18 @@
+config:
+    stores/1/payment/pademobile/order_status: processing
+tables:
+    sales/order:
+        - entity_id: 2
+          increment_id: 10000002
+          base_grand_total: 5.9000
+    sales/order_payment:
+        - parent_id: 2
+          state: pending_payment
+          status: pending_payment
+          method: pademobile
+    sales/order_item:
+        - order_id: 2
+          is_virtual: 0
+          qty_ordered: 1
+          qty_invoiced: 0
+          qty_shipped: 0

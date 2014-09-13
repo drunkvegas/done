@@ -1,0 +1,6 @@
+config:
+    stores/1/payment/pademobile/id_usuario: 244
+    stores/1/payment/pademobile/pais: MX
+    stores/1/payment/pademobile/cgi_url: http://dev.pademobile.com:710/comprar/
+    stores/1/payment/pademobile/private_key: sfe23rK_sds2$-dfdw2
+    stores/1/payment/pademobile/descripcion: Ha comprado usted algo bonito
